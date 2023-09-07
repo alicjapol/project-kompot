@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  :root {
+    --light: #FCFCFC;
+    --text: #131313;
+    --subtle-text: #ABABAB;
+    --brand-green: #84A178;
+    --brand-yellow: #F8D24E;
+    --disabled: #ABABAB;
+    --modal-fill: rgba(248, 210, 78, 0.1);
+    --address: #D6936D;
+    --accent-green: #AEC6A5;
+    --accent-yellow: #EFD478;
+    --accent-brown: #D6936D;
+  }
