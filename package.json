@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://olgaszum.github.io/project-kompot/",
+  "homepage": "https://OlgaSzum.github.io/project-kompot/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-kompot"
+    "build": "parcel build src/*.html --public-url /project-kompot/"
   },
   "repository": {
     "type": "git",
