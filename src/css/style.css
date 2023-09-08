@@ -43,17 +43,51 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 }
+/* SEKCJA KOMENTARZE */
+
+.cooments {
+  background-image: url(images/background_x3.jpg);
+}
+
+.swiper-slide>img {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+ }
+
+ .opinion {
+  background-color: var(--brand-green);
+  border-radius: 24px;
+  padding: 43px 109px;
+ }
+ 
+ .costumer-location {
+  font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.88em;
+letter-spacing: 0em;
+text-align: center;
+ }
+
+ .swiper-slide {
+  color: var(--brand-green);
+ }
 
 @media (min-width: 480px) {
   .container {
     max-width: 480px;
   }
+
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+
+  
 }
 
 @media (min-width: 1200px) {
@@ -62,10 +96,3 @@ ul {
   }
 }
  
-
-/* SEKCJA KOMEMENTARZE */
- .swiper-slide>img {
-  width: 80px;
-  height: 80px;
-  
- }
