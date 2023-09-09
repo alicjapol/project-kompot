@@ -1,0 +1,70 @@
+.container-about-advantages {
+  background-color: var(--brand-green);
+}
+
+.about-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--light);
+}
+
+.about-heading {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  color: var(--light);
+  letter-spacing: 1.2px;
+}
+
+.about-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+.about-text.about-text-first {
+  line-height: 1.76;
+  letter-spacing: 0.48px;
+}
+
+.about-button {
+  background-color: var(--brand-yellow);
+  height: 42px;
+  weight: 164px;
+  border-radius: 10%;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product-wrapper {
+    width: 224px;
+    height: 428px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .products-wrapper {
+    width: 370px;
+    height: 536px;
+  }
+
+  .products-section-heading {
+    font-size: 36px;
+    letter-spacing: 2.16px;
+  }
+
+  .products-section-description {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+}
