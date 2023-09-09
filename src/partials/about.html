@@ -5,7 +5,14 @@
       <a id="how_it's_made" class="about-label">tradition and love</a>
       <h2 class="about-heading">how it's made?</h2>
       <div>
-        <div><img src="//src/images/advantages-cow_x1.jpg" /></div>
+        <div>
+          <img
+            src="./src/images/advantages-cow_x1.jpg"
+            srcset="images/advantages-cow_x2.jpg 330w, images/advantages-cow_x3 490w"
+            sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, 100vw"
+            alt="A grey cow eating grass"
+          />
+        </div>
         <div>
           <div>
             <p class="about-text about-text-first">
@@ -22,8 +29,8 @@
             </p>
           </div>
           <button class="about-button">
-            Read more<svg class="about-btn-icon">
-              <use href="../images/icons.svg#icon-arrow"></use>
+            Read more<svg class="about-btn-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
