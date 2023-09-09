@@ -50,7 +50,7 @@
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin-top: 26px;
+  padding-top: 126px;
 }
 
 .products-decription {
@@ -145,6 +145,89 @@
   width: 40px;
   height: 16px;
   fill: var(--text);
+}
+
+/* Modal - SECTION */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  pointer-events: all;
+  visibility: visible;
+  transition: opacity 250ms;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal-body {
+  position: relative;
+  max-width: 568px;
+  min-height: 996px;
+  background-color: var(--light);
+  border-radius: 10px;
+  border: 2px solid var(--brand-yellow);
+  padding: 32px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  inset: 12px 12px auto auto;
+  width: 20px;
+  height: 20px;
+  fill: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form {
+  margin-top: 28px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.modal-heading-1 {
+  color: var(--text);
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.modal-heading-2 {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.ingredients-list-items {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1, 76;
+  letter-spacing: 0.56px;
+}
+
+.arrow-button {
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 /* TABLET */
