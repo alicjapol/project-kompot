@@ -25,6 +25,7 @@
   line-height: normal;
   letter-spacing: 2.16px;
   text-transform: uppercase;
+  padding-bottom: 148px;
 }
 
 .products-section-description {
@@ -36,6 +37,8 @@
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 12px;
 }
 
 .products-heading {
@@ -63,7 +66,7 @@
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 168px 16x;
+  gap: 168px 16px;
   justify-content: center;
 }
 
