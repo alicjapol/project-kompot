@@ -1,0 +1,116 @@
+/* MOBILE */
+
+.wrapper {
+  background-image: url(../images/background_x1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url('../images/background_x2.jpg');
+  }
+}
+
+.products-section-heading {
+  color: var(--text);
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+}
+
+.products-section-description {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.products-heading {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.products-decription {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.76;
+  letter-spacing: 0.64px;
+  margin-top: 123px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 168px 16x;
+  justify-content: center;
+}
+
+.products-wrapper {
+  width: 280px;
+  height: 420px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.wrapper-green {
+  background: var(--accent-green);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+}
+
+.wrapper-yellow {
+  background: var(--accent-yellow);
+}
+
+.wrapper-brown {
+  background: var(--accent-brown);
+}
+
+.products-image {
+  border-radius: 150px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.icon-arrow {
+  width: 40px;
+  height: 16px;
+  fill: var(--text);
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product-wrapper {
+    width: 320px;
+    height: 428px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .products-wrapper {
+    width: 224px;
+  }
+}
