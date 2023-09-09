@@ -3,6 +3,7 @@
 }
 
 .about-label {
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -11,6 +12,7 @@
 }
 
 .about-heading {
+  text-align: center;
   font-family: 'Seymour One', sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -20,6 +22,7 @@
 }
 
 .about-text {
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -34,7 +37,7 @@
 .about-button {
   background-color: var(--brand-yellow);
   height: 42px;
-  weight: 164px;
+  width: 164px;
   border-radius: 10%;
   color: #000000;
   font-family: 'Montserrat', sans-serif;
