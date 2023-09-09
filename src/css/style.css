@@ -3,10 +3,14 @@
 @import url(./footer.css);
 @import url(./products.css);
 @import url(./comments.css);
+@import url(./gallery.css);
 
 * {
   padding: 0;
   margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Seymour One', sans-serif;
 }
 
 h1,
@@ -68,9 +72,6 @@ ul {
   }
 }
 
-
 .example {
   display: none;
- }
- 
- 
+}
