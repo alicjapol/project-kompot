@@ -25,7 +25,7 @@
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  padding-bottom: 148px;
+  margin-bottom: 148px;
 }
 
 .products-section-description {
@@ -50,7 +50,7 @@
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 40px;
-  padding-top: 126px;
+  padding-top: 128px;
 }
 
 .products-decription {
@@ -63,13 +63,20 @@
   letter-spacing: 0.56px;
   margin-left: 60px;
   margin-right: 60px;
+  flex-grow: 1;
 }
 
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 168px 16px;
+  gap: 16px;
   justify-content: center;
+}
+
+.products-wrapper-main {
+  display: flex;
+  flex-direction: column;
+  gap: 168px;
 }
 
 .products-wrapper {
@@ -77,7 +84,8 @@
   height: 420px;
   border-radius: 24px;
   position: relative;
-  margin-top: 126px;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper-green {
@@ -93,9 +101,26 @@
   background: var(--accent-brown);
 }
 
-.image-1::before {
+/* Okrągłe obrazki przy użyciu pseudoklas* (próbowałam uwspólnić włąściwości w klasach, które sie powtarzają, ale wtedy kod nie działa prawidłowo, więc zostawiłam jak jest na razie, jak zostanie czas to zajmę sie uporządkowaniem tego)*/
+.image-1 {
   content: '';
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%),
+    #d9d9d9;
+
+  box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: -111px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.image-1::after {
   background-image: url('../images/products/products-icecream_x1.jpg');
+  content: '';
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -103,13 +128,30 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  top: -111px; /* Przesuwa obrazek o połowę jego wysokości w górę, wystając poza górną krawędź */
+  top: -11px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 3;
 }
 
-.image-2::before {
+.image-2 {
+  content: '';
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%),
+    #d9d9d9;
+
+  box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: -111px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-2::after {
   content: '';
   background-image: url('../images/products/products-coffe_x1.jpg');
   background-repeat: no-repeat;
@@ -119,13 +161,30 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  top: -111px; /* Przesuwa obrazek o połowę jego wysokości w górę, wystając poza górną krawędź */
+  top: -11px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 3;
 }
 
-.image-3::before {
+.image-3 {
+  content: '';
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%),
+    #d9d9d9;
+
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: -111px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-3::after {
   content: '';
   background-image: url('../images/products/products-milkshake_x1.jpg');
   background-repeat: no-repeat;
@@ -135,19 +194,26 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  top: -111px; /* Przesuwa obrazek o połowę jego wysokości w górę, wystając poza górną krawędź */
+  top: -11px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 3;
 }
 
 .icon-arrow {
   width: 40px;
   height: 16px;
   fill: var(--text);
+  margin-bottom: 16px;
+  margin-top: auto;
 }
 
 /* Modal - SECTION */
+
+button {
+  cursor: pointer;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -158,6 +224,7 @@
   pointer-events: all;
   visibility: visible;
   transition: opacity 250ms;
+  z-index: 2;
 }
 
 .is-hidden {
@@ -215,12 +282,30 @@
   line-height: 1.4;
 }
 
-.ingredients-list-items {
+.ingredients-list {
+  display: flex;
+  justify-content: space-between
+  align-items: center;s
+}
+
+.ingredients-name {
   color: var(--text);
-  text-align: center;
   font-family: Montserrat;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1, 76;
+  line-height: 1.76;
+  letter-spacing: 0.56px;
+  text-align: left;
+  flex: 1;
+}
+
+.ingredient-quantity {
+  text-align: right;
+  flex: 1;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
   letter-spacing: 0.56px;
 }
 
@@ -232,6 +317,12 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-wrapper-main {
+    flex-direction: row;
+    column-gap: 16px;
+    margin-top: 80px;
+  }
+
   .product-wrapper {
     width: 224px;
     height: 428px;
@@ -249,6 +340,7 @@
   .products-heading {
     font-size: 22px;
     letter-spacing: 0.88px;
+    padding-top: 108px;
   }
 
   .products-decription {
@@ -259,6 +351,11 @@
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
+  .products-wrapper-main {
+    flex-direction: row;
+    column-gap: 29px;
+    margin-top: 120px;
+  }
   .products-wrapper {
     width: 370px;
     height: 536px;
@@ -277,6 +374,8 @@
   .products-heading {
     font-size: 30px;
     letter-spacing: 1.2px;
+    margin-bottom: 66px;
+    padding-top: 165px;
   }
 
   .products-decription {
@@ -289,5 +388,43 @@
   .products-image {
     width: 302px;
     height: 302px;
+  }
+
+  .icon-arrow {
+    margin-bottom: 60px;
+  }
+
+  .image-1 {
+    width: 302px;
+    height: 302px;
+    top: -167px;
+  }
+
+  .image-1::after {
+    width: 302px;
+    height: 302px;
+    top: -16px;
+  }
+
+  .image-2 {
+    width: 302px;
+    height: 302px;
+    top: -167px;
+  }
+  .image-2::after {
+    width: 302px;
+    height: 302px;
+    top: -16px;
+  }
+
+  .image-3 {
+    width: 302px;
+    height: 302px;
+    top: -167px;
+  }
+  .image-3::after {
+    width: 302px;
+    height: 302px;
+    top: -16px;
   }
 }
