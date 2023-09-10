@@ -47,7 +47,22 @@
                      <div class="ingredient-quantity">10g</div>
                     </div>
                 </div>
-                <form class="modal-form"></form>         
+                <form class="modal-form">
+                  <div>
+									<div class="modal-field-wrapper"><label for="username"></label>
+									<input class="field-text" id="username" type="text" name="name"  placeholder="Name" />
+													</div>
+                          <div>
+								<div class="modal-field-wrapper">
+                  <label for="phone"></label>
+									<input class="field-text" id="phone" type="tel" name="phone" pattern="\d*" minlength="9" maxlength="12" placeholder="Phone" required />
+																	</div>
+							</div>
+              <div class="modal-field-wrapper">
+								<label for="comment"></label>
+								<textarea class="modal-comment field-text" class="modal-comment" name="comment" id="comment" placeholder="Comment"></textarea>
+							</div>
+                </form>         
           </div>
           </div>
       <ul class="products-wrapper-main">

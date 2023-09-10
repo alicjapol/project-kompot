@@ -240,7 +240,7 @@ button {
   background-color: var(--light);
   border-radius: 10px;
   border: 2px solid var(--brand-yellow);
-  padding: 32px 40px;
+  padding: 28px 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -263,6 +263,48 @@ button {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.modal-field-wrapper {
+  position: relative;
+  margin-top: 16px;
+}
+
+.modal-field-wrapper input {
+  border: none;
+  outline: none;
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid var(--brand-green);
+  background-color: rgba(248, 210, 78, 0.1);
+  width: 100%;
+  transition: 250ms;
+  transition-timing-function: var(--tr-function);
+}
+
+.field-text::placeholder {
+  color: var(--text);
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-left: 10px;
+  padding-top: 11px;
+}
+
+.modal-comment {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 84px;
+  margin-top: 16px;
+  padding-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--brand-green);
+  background: rgba(248, 210, 78, 0.1);
+  resize: none;
+  transition: 250ms;
+  transition-timing-function: var(--tr-function);
 }
 
 .modal-heading-1 {
