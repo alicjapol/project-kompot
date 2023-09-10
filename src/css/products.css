@@ -284,8 +284,8 @@ button {
 
 .ingredients-list {
   display: flex;
-  justify-content: space-between
-  align-items: center;s
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ingredients-name {
