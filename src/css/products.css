@@ -1,0 +1,430 @@
+/* MOBILE */
+
+.wrapper {
+  background-image: url(../images/backgrounds/background_x1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url('../images/backgrounds/background_x2.jpg');
+  }
+}
+
+.products-section-heading {
+  color: var(--text);
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 148px;
+}
+
+.products-section-description {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 12px;
+}
+
+.products-heading {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-top: 128px;
+}
+
+.products-decription {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.76;
+  letter-spacing: 0.56px;
+  margin-left: 60px;
+  margin-right: 60px;
+  flex-grow: 1;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.products-wrapper-main {
+  display: flex;
+  flex-direction: column;
+  gap: 168px;
+}
+
+.products-wrapper {
+  width: 280px;
+  height: 420px;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-green {
+  background: var(--accent-green);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+}
+
+.wrapper-yellow {
+  background: var(--accent-yellow);
+}
+
+.wrapper-brown {
+  background: var(--accent-brown);
+}
+
+/* Okrągłe obrazki przy użyciu pseudoklas* (próbowałam uwspólnić włąściwości w klasach, które sie powtarzają, ale wtedy kod nie działa prawidłowo, więc zostawiłam jak jest na razie, jak zostanie czas to zajmę sie uporządkowaniem tego)*/
+.image-1 {
+  content: '';
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%),
+    #d9d9d9;
+
+  box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: -111px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.image-1::after {
+  background-image: url('../images/products/products-icecream_x1.jpg');
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.image-2 {
+  content: '';
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%),
+    #d9d9d9;
+
+  box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: -111px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-2::after {
+  content: '';
+  background-image: url('../images/products/products-coffe_x1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.image-3 {
+  content: '';
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%),
+    #d9d9d9;
+
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: -111px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-3::after {
+  content: '';
+  background-image: url('../images/products/products-milkshake_x1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.icon-arrow {
+  width: 40px;
+  height: 16px;
+  fill: var(--text);
+  margin-bottom: 16px;
+  margin-top: auto;
+}
+
+/* Modal - SECTION */
+
+button {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  pointer-events: all;
+  visibility: visible;
+  transition: opacity 250ms;
+  z-index: 2;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal-body {
+  position: relative;
+  max-width: 568px;
+  min-height: 996px;
+  background-color: var(--light);
+  border-radius: 10px;
+  border: 2px solid var(--brand-yellow);
+  padding: 32px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  inset: 12px 12px auto auto;
+  width: 20px;
+  height: 20px;
+  fill: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form {
+  margin-top: 28px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.modal-heading-1 {
+  color: var(--text);
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.modal-heading-2 {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.ingredients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ingredients-name {
+  color: var(--text);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.56px;
+  text-align: left;
+  flex: 1;
+}
+
+.ingredient-quantity {
+  text-align: right;
+  flex: 1;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.56px;
+}
+
+.arrow-button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products-wrapper-main {
+    flex-direction: row;
+    column-gap: 16px;
+    margin-top: 80px;
+  }
+
+  .product-wrapper {
+    width: 224px;
+    height: 428px;
+  }
+
+  .products-section-heading {
+    font-size: 34px;
+    letter-spacing: 1.36px;
+  }
+
+  .products-section-description {
+    font-size: 22px;
+  }
+
+  .products-heading {
+    font-size: 22px;
+    letter-spacing: 0.88px;
+    padding-top: 108px;
+  }
+
+  .products-decription {
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  .products-wrapper-main {
+    flex-direction: row;
+    column-gap: 29px;
+    margin-top: 120px;
+  }
+  .products-wrapper {
+    width: 370px;
+    height: 536px;
+  }
+
+  .products-section-heading {
+    font-size: 36px;
+    letter-spacing: 2.16px;
+  }
+
+  .products-section-description {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+
+  .products-heading {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    margin-bottom: 66px;
+    padding-top: 165px;
+  }
+
+  .products-decription {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .products-image {
+    width: 302px;
+    height: 302px;
+  }
+
+  .icon-arrow {
+    margin-bottom: 60px;
+  }
+
+  .image-1 {
+    width: 302px;
+    height: 302px;
+    top: -167px;
+  }
+
+  .image-1::after {
+    width: 302px;
+    height: 302px;
+    top: -16px;
+  }
+
+  .image-2 {
+    width: 302px;
+    height: 302px;
+    top: -167px;
+  }
+  .image-2::after {
+    width: 302px;
+    height: 302px;
+    top: -16px;
+  }
+
+  .image-3 {
+    width: 302px;
+    height: 302px;
+    top: -167px;
+  }
+  .image-3::after {
+    width: 302px;
+    height: 302px;
+    top: -16px;
+  }
+}

@@ -1,0 +1,240 @@
+.hero-section {
+  position: relative;
+}
+
+/* .dots {
+  background: url(../images/hero/dots_x1.png) no-repeat;
+} */
+
+/* @media (min-width: 480px) {
+  .dots {
+    background: url(../images/hero/dots_x1.png) no-repeat;
+    background-position: right bottom no-repeat;
+  }
+} */
+
+@media (min-width: 768px) {
+  .dots {
+    background: url(../images/hero/dots_x2-left.png) left bottom no-repeat,
+      url(../images/hero/dots_x2-right.png) right bottom no-repeat;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dots {
+    background: url(../images/hero/dots_x3.png) no-repeat;
+    background-position: bottom;
+  }
+}
+
+.hero-content {
+  padding-top: 99px;
+  padding-bottom: 65px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-content {
+    padding-top: 118px;
+  }
+}
+
+.hero-title {
+  max-width: 247px;
+  color: var(--light);
+  font-family: Seymour One;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.hero-title-accent {
+  font-size: 34px;
+  line-height: 0.965;
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 38px;
+    letter-spacing: 1.52px;
+    max-width: 367px;
+  }
+}
+
+.hero-description {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero-description {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-description {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 165px;
+    margin-bottom: 29px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-text {
+    font-size: 14px;
+    max-width: 200px;
+    margin-bottom: 24px;
+  }
+}
+
+.hero-arrow {
+  fill: var(--light);
+  width: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-buttons {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-buttons {
+    margin-bottom: 42px;
+  }
+}
+
+.hero-button-bordered {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 11px 26px;
+  border-radius: 8px;
+  border: 2px solid var(--brand-yellow);
+  text-decoration: none;
+}
+
+.hero-button-underlined {
+  color: var(--brand-yellow);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.hero-statistics {
+  display: none;
+}
+
+.statistics-number {
+  color: var(--text);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.84px;
+  text-transform: uppercase;
+}
+
+.statistics-text {
+  color: var(--light);
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (min-width: 768px) {
+  .hero-statistics {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 94px;
+  }
+
+  .statistics-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-statistics {
+    top: 126px;
+  }
+  .statistics-item {
+    margin-bottom: 16px;
+  }
+}
+
+/* .hero-icecream-plate {
+}
+
+.hero-image {
+} */
+
+.hero-image-wrapper {
+  position: absolute;
+  min-width: 177px;
+}
+
+@media (max-width: 479px) {
+  .hero-image-wrapper {
+    bottom: 0;
+    left: 50%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .hero-image-wrapper {
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-image-wrapper {
+    right: 92px;
+    bottom: 0;
+  }
+}

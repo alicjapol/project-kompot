@@ -1,65 +1,80 @@
 <!-- About section -->
-
-<section>
-  <div class="container">
-    <p>tradition and love</p>
-    <h2>how it's made?</h2>
-    <div>
-      <div><img /></div>
+<div class="container container-about-advantages">
+  <section>
+    <div class="container">
+      <a id="how_it's_made" class="about-label">tradition and love</a>
+      <h2 class="about-heading">how it's made?</h2>
       <div>
         <div>
-          <p>
-            Ice is a place where you will become not only a little happier, but also healthier.
-            Health is the main value for us, and we follow it when creating our handmade desserts.
-          </p>
-          <p>
-            We use traditional recipes and 100% natural ingredients. Our products are so natural
-            that they can be given to children from the age of three years. Sweets lovers can expect
-            55 types of ice cream, 15 types of coffee and 23 milkshakes.
-          </p>
-          <p>This is enough to choose ice cream and coffee for any mood!</p>
+          <img
+            src="./images/advantages/advantages-cow_x1.jpg"
+            srcset="
+              ./images/advantages/advantages-cow_x2.jpg 330w,
+              ./images/advantages/advantages-cow_x3.jpg 490w
+            "
+            sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, 100vw"
+            alt="A grey cow eating grass"
+          />
         </div>
-        <button>
-          <svg><use></use></svg>
-        </button>
+        <div>
+          <div>
+            <p class="about-text about-text-first">
+              Ice is a place where you will become not only a little happier, but also healthier.
+              Health is the main value for us, and we follow it when creating our handmade desserts.
+            </p>
+            <p class="about-text about-text-second">
+              We use traditional recipes and 100% natural ingredients. Our products are so natural
+              that they can be given to children from the age of three years. Sweets lovers can
+              expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.
+            </p>
+            <p class="about-text about-text-third">
+              This is enough to choose ice cream and coffee for any mood!
+            </p>
+          </div>
+          <button class="about-button">
+            Read more<svg class="about-btn-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Advantages section -->
+  <!-- Advantages section -->
 
-<section>
-  <div class="container">
-    <h2>Advantages</h2>
-    <ul>
-      <li>
-        <div>
-          <svg>
-            <use></use>
-          </svg>
-        </div>
-        <p>721</p>
-        <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>
-      <li>
-        <div>
-          <svg>
-            <use></use>
-          </svg>
-        </div>
-        <p>16kg</p>
-        <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>
-      <li>
-        <div>
-          <svg>
-            <use></use>
-          </svg>
-        </div>
-        <p>84</p>
-        <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-      </li>
-    </ul>
-  </div>
-</section>
+  <section>
+    <div class="container">
+      <h2>Advantages</h2>
+      <ul>
+        <li>
+          <div>
+            <svg>
+              <use></use>
+            </svg>
+          </div>
+          <p>721</p>
+          <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+        </li>
+        <li>
+          <div>
+            <svg>
+              <use></use>
+            </svg>
+          </div>
+          <p>16kg</p>
+          <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+        </li>
+        <li>
+          <div>
+            <svg>
+              <use></use>
+            </svg>
+          </div>
+          <p>84</p>
+          <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
