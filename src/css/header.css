@@ -1,0 +1,66 @@
+.header {
+  position: relative;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  width: 1168px;
+  margin: 0, 0;
+  background-color: var(--brand-green);
+}
+.nav {
+  display: flex;
+  column-gap: 28px;
+  color: var(--light);
+  margin-left: 309.57px;
+}
+.nav-link {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 32px;
+  padding-bottom: 13px;
+  color: var(--light);
+}
+.button-buy {
+  position: relative;
+  width: 152px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  margin-left: 205px;
+  margin-right: 0px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-style: none;
+  background-color: var(--brand-yellow);
+}
+.icon-icecream {
+  position: absolute;
+  top: 9.86px;
+  left: 3.8px;
+  fill: var(--brand-yellow);
+}
+.logo-text {
+  position: absolute;
+  top: 32.15px;
+  left: 20.43px;
+  text-align: center;
+  font-family: 'Seymour', 'sans-serif';
+  font-size: 21.76px;
+  font-weight: 400;
+  letter-spacing: -2.176px;
+  color: var(--brand-yellow);
+}
+.logo {
+  width: 60px;
+  height: 65px;
+  margin-top: 8px;
+}
+.button-arrow {
+  position: absolute;
+  top: 15px;
+  left: 109px;
+}
