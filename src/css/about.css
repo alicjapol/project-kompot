@@ -34,7 +34,7 @@
 .about-button {
   background-color: var(--brand-yellow);
   height: 42px;
-  weight: 164px;
+  width: 164px;
   border-radius: 10%;
   color: #000000;
   font-family: 'Montserrat', sans-serif;
