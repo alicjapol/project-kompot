@@ -1,0 +1,58 @@
+<div class="modal is-hidden" product-modal>
+  <div class="modal-body">
+    <button class="modal-close" product-modal-close>
+      <svg class="modal-close-icon-items">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h4 class="modal-heading-1">Chocolate icecream</h4>
+    <div class="image-modal"></div>
+    <ul class="ingredients-wrapper">
+      <li class="ingredients-ellipse"><span class="ingredients-values">320</span>kcal</li>
+      <li class="ingredients-ellipse"><span class="ingredients-values">4g</span>Protein...</li>
+      <li class="ingredients-ellipse"><span class="ingredients-values">8,2g</span>Fats</li>
+      <li class="ingredients-ellipse"><span class="ingredients-values">40,4g</span>Carbs</li>
+    </ul>
+    <p class="modal-heading-2">Ingredients</p>
+    <ul class="ingredients-list">
+      <li class="ingredients-list-item">Milk<span class="item-quantity">100ml</span></li>
+      <li class="ingredients-list-item">
+        Belgian chocolate <span class="item-quantity">20g</span>
+      </li>
+      <li class="ingredients-list-item">Cream<span class="item-quantity">150 ml</span></li>
+      <li class="ingredients-list-item">Cocoa powder<span class="item-quantity">30g</span></li>
+      <li class="ingredients-list-item">Sugar<span class="item-quantity">40g</span></li>
+      <li class="ingredients-list-item">Vanilla sugar<span class="item-quantity">10g</span></li>
+    </ul>
+    <form class="modal-form">
+      <div class="modal-field-wrapper">
+        <label for="username"></label>
+        <input class="field-text" id="username" type="text" name="name" placeholder="Name" />
+      </div>
+      <div class="modal-field-wrapper">
+        <label for="phone"></label>
+        <input
+          class="field-text"
+          id="phone"
+          type="tel"
+          name="phone"
+          pattern="\d*"
+          minlength="9"
+          maxlength="12"
+          placeholder="Phone"
+          required
+        />
+      </div>
+      <div class="modal-field-wrapper">
+        <label for="comment"></label>
+        <textarea
+          class="modal-comment field-text"
+          name="comment"
+          id="comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="button-submit">Submit</button>
+    </form>
+  </div>
+</div>
