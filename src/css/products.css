@@ -1,7 +1,7 @@
 /* MOBILE */
 
 .wrapper {
-  background-image: url(../images/background_x1.jpg);
+  background-image: url(../images/backgrounds/background_x1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -12,7 +12,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .box {
-    background-image: url('../images/background_x2.jpg');
+    background-image: url('../images/backgrounds/background_x2.jpg');
   }
 }
 
