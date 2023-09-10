@@ -5,6 +5,7 @@
 @import url(./comments.css);
 @import url(./gallery.css);
 @import url(./about.css);
+@import url(./advantages.css);
 
 * {
   padding: 0;
