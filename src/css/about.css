@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.section-about {
+  margin-bottom: 60px;
+}
+
 .about-label {
   display: block;
   font-family: 'Montserrat', sans-serif;
@@ -57,15 +61,14 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.62;
-  width: 220px;
+  line-height: 19.44px;
 }
 .about-text p {
   font-family: inherit;
 }
 .about-text-first-paragraph {
-  height: 126px;
-  line-height: 1.76;
+  /* height: 126px; */
+  line-height: 21.12px;
   letter-spacing: 0.48px;
 }
 
@@ -88,9 +91,13 @@
 }
 
 /* MOBILE */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .about-heading {
     width: 200px;
+  }
+
+  .about-text {
+    width: 220px;
   }
 }
 
@@ -110,12 +117,17 @@
   .about-text {
     margin-bottom: 32px;
     text-align: left;
+    max-width: 334px;
+    line-height: 21.12px;
+    gap: 8px;
   }
 
   .about-decorative-picture {
     border-radius: 165px;
     width: 330px;
     height: 330px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .about-decorative-picture::after {
@@ -125,21 +137,51 @@
     top: 26px;
     background: url('/src/images/advantages/advantages-cow_x2.jpg') no-repeat;
   }
+
+  .about-picture-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 38px;
+  }
+
+  .about-text-button {
+    text-align: left;
+  }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
-  .about-decorative-picture {
-    border-radius: 250px;
-    width: 490px;
-    height: 490px;
+  .about-text {
+    margin-bottom: 54px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 27.16px;
+    max-width: 463px;
+  }
+
+  .about-text-first-paragraph {
+    letter-spacing: 0.64px;
+    line-height: 28.16px;
+    font-size: 16px;
   }
 
   .about-decorative-picture {
     border-radius: 250px;
     width: 490px;
     height: 490px;
+  }
+
+  .about-decorative-picture::after {
+    border-radius: 250px;
+    width: 490px;
+    height: 490px;
     top: 39px;
     background: url('/src/images/advantages/advantages-cow_x3.jpg') no-repeat;
+  }
+
+  .about-picture-text {
+    margin-right: 121px;
+    justify-content: space-between;
   }
 }
