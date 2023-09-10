@@ -53,6 +53,7 @@ img {
   --accent-green: #aec6a5;
   --accent-yellow: #efd478;
   --accent-brown: #d6936d;
+  --button-green: #0a8817;
 }
 
 body {
@@ -63,6 +64,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 @media (min-width: 480px) {

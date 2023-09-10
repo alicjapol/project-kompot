@@ -11,11 +11,17 @@
       <div class="hero-description">
         <img
           class="hero-icecream-plate"
-          src="./images/hero/plate-icecream_x2.png"
+          src="./images/hero/plate-tablet_1x.png"
+          srcset="
+            ./images/hero/plate-tablet_1x.png  152w,
+            ./images/hero/plate-tablet_2x.png  304w,
+            ./images/hero/plate-desktop_1x.png 225w,
+            ./images/hero/plate-desktop_2x.png 450w
+          "
+          sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 152px"
           alt="Ice cream on plate"
-          width="225"
         />
-        <div>
+        <div class="hero-text-wrapper">
           <p class="hero-text">
             Indulge in a scoop of ice cream made with passion and treat your taste buds to an
             unforgettable experience!
@@ -41,12 +47,14 @@
       <div class="hero-image-wrapper">
         <img
           class="hero-image"
-          src="./images/hero/hero-icecream_x3.png"
+          src="./images/hero/hero-icecream-tablet_1x.png"
           srcset="
-            ./images/hero/hero-icecream_x1.png 177w,
-            ./images/hero/hero-icecream_x2.png 218w,
-            ./images/hero/hero-icecream_x3.png 268w,
-            ./images/hero/hero-icecream_x4.png 456w
+            ./images/hero/hero-icecream-mobile_1x.png  177w,
+            ./images/hero/hero-icecream-mobile_2x.png  354w,
+            ./images/hero/hero-icecream-tablet_1x.png  268w,
+            ./images/hero/hero-icecream-tablet_2x.png  536w,
+            ./images/hero/hero-icecream-desktop_1x.png 456w,
+            ./images/hero/hero-icecream-desktop_2x.png 912w
           "
           sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, 177px"
           alt="Ice cream in waffle cone"
