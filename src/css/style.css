@@ -4,6 +4,7 @@
 @import url(./products.css);
 @import url(./comments.css);
 @import url(./gallery.css);
+@import url(./about.css);
 
 * {
   padding: 0;
@@ -34,6 +35,12 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --light: #fcfcfc;
   --text: #131313;
@@ -48,10 +55,14 @@ ul {
   --accent-brown: #d6936d;
 }
 
+body {
+  background-color: var(--brand-green);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 @media (min-width: 480px) {
@@ -63,12 +74,14 @@ ul {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding: 0 16px;
   }
 }
 

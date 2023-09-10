@@ -1,36 +1,57 @@
 <!-- Hero section -->
 
 <section>
-  <div class="container">
-    <div>
-      <h1>Ice cream made with <span>passion</span></h1>
-      <div>
-        <a href="#products">Products</a>
-        <a href="#about">How it's made?</a>
+  <div class="container dots">
+    <div class="hero-content">
+      <h1 class="hero-title">Ice cream made with <span class="hero-title-accent">passion</span></h1>
+      <div class="hero-buttons">
+        <a class="hero-button-bordered" href="#products">Products</a>
+        <a class="hero-button-underlined" href="#about">How it's made?</a>
       </div>
-      <div>
-        <!-- Poniżej zdjecie lodow na talerzu -->
-        <img />
+      <div class="hero-description">
+        <img
+          class="hero-icecream-plate"
+          src="./images/hero/plate-icecream_x2.png"
+          alt="Ice cream on plate"
+          width="225"
+        />
         <div>
-          <p>
+          <p class="hero-text">
             Indulge in a scoop of ice cream made with passion and treat your taste buds to an
             unforgettable experience!
           </p>
-          <a href="#products"><svg></svg></a>
+          <a href="#products"
+            ><svg class="hero-arrow" viewBox="0 0 40 16">
+              <use href="./images/icons.svg#icon-arrow"></use>
+              ">
+            </svg></a
+          >
         </div>
       </div>
-      <div>
-        <ul>
-          <li>16</li>
-          <li>cafes</li>
+      <div class="hero-statistics">
+        <ul class="statistics-item">
+          <li class="statistics-number">16</li>
+          <li class="statistics-text">cafes</li>
         </ul>
         <ul>
-          <li>23</li>
-          <li>food trucks</li>
+          <li class="statistics-number">23</li>
+          <li class="statistics-text">food trucks</li>
         </ul>
       </div>
-      <!-- Poniżej zdjecie lodow z buźkami (pozycjonowane absolutnie)-->
-      <div><img /></div>
+      <div class="hero-image-wrapper">
+        <img
+          class="hero-image"
+          src="./images/hero/hero-icecream_x3.png"
+          srcset="
+            ./images/hero/hero-icecream_x1.png 177w,
+            ./images/hero/hero-icecream_x2.png 218w,
+            ./images/hero/hero-icecream_x3.png 268w,
+            ./images/hero/hero-icecream_x4.png 456w
+          "
+          sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, 177px"
+          alt="Ice cream in waffle cone"
+        />
+      </div>
     </div>
   </div>
 </section>
