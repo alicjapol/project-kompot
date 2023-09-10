@@ -1,44 +1,81 @@
-.container-about-advantages {
+.container.container-about-advantages {
   background-color: var(--brand-green);
+  padding-top: 60px;
+  text-align: center;
 }
 
 .about-label {
-  text-align: center;
+  display: block;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.2;
+  text-transform: uppercase;
+  line-height: normal;
   color: var(--light);
+  margin-bottom: 12px;
 }
 
 .about-heading {
-  text-align: center;
-  font-family: 'Seymour One', sans-serif;
+  /* width: 200px; */
+  margin: 0 auto 32px;
   font-weight: 400;
   font-size: 30px;
-  line-height: 1.26;
+  text-transform: uppercase;
+  line-height: normal;
   color: var(--light);
   letter-spacing: 1.2px;
 }
 
+.about-decorative-picture {
+  position: relative;
+  width: 278.996px;
+  height: 278px;
+  border-radius: 140px;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.82185px 0px rgba(153, 114, 23, 0.25);
+  margin: 0 auto 62px;
+}
+
+.about-decorative-picture::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 22px;
+  width: 278.996px;
+  height: 278px;
+  border-radius: 140px;
+  background: url('/src/images/advantages/advantages-cow_x1.jpg') no-repeat;
+}
+
 .about-text {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--light);
+  margin: 0 auto 24px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.62;
+  width: 220px;
 }
-
-.about-text.about-text-first {
+.about-text p {
+  font-family: inherit;
+}
+.about-text-first-paragraph {
+  height: 126px;
   line-height: 1.76;
   letter-spacing: 0.48px;
 }
 
 .about-button {
+  text-align: center;
   background-color: var(--brand-yellow);
   height: 42px;
   width: 164px;
-  border-radius: 10%;
+  border-radius: 10px;
+  border: none;
   color: #000000;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -46,28 +83,63 @@
   line-height: 1.28;
 }
 
+.about-btn-icon {
+  margin-left: 4px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 479px) {
+  .about-heading {
+    width: 200px;
+  }
+}
+
 /* TABLET */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .product-wrapper {
-    width: 224px;
-    height: 428px;
+@media screen and (min-width: 768px) {
+  .about-label {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.88px;
+  }
+
+  .about.heading {
+    font-size: 34px;
+    letter-spacing: 2.04px;
+  }
+
+  .about-text {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .about-decorative-picture {
+    border-radius: 165px;
+    width: 330px;
+    height: 330px;
+  }
+
+  .about-decorative-picture::after {
+    border-radius: 165px;
+    width: 330px;
+    height: 330px;
+    top: 26px;
+    background: url('/src/images/advantages/advantages-cow_x2.jpg') no-repeat;
   }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
-  .products-wrapper {
-    width: 370px;
-    height: 536px;
+  .about-decorative-picture {
+    border-radius: 250px;
+    width: 490px;
+    height: 490px;
   }
 
-  .products-section-heading {
-    font-size: 36px;
-    letter-spacing: 2.16px;
-  }
-
-  .products-section-description {
-    font-size: 30px;
-    letter-spacing: 1.2px;
+  .about-decorative-picture {
+    border-radius: 250px;
+    width: 490px;
+    height: 490px;
+    top: 39px;
+    background: url('/src/images/advantages/advantages-cow_x3.jpg') no-repeat;
   }
 }
