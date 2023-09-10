@@ -236,7 +236,7 @@ button {
 .modal-body {
   position: relative;
   max-width: 568px;
-  min-height: 996px;
+  min-height: 700px;
   background-color: var(--light);
   border-radius: 10px;
   border: 2px solid var(--brand-yellow);
@@ -282,6 +282,32 @@ button {
   line-height: 1.4;
 }
 
+.image-modal {
+  content: '';
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%),
+    #d9d9d9;
+  box-shadow: rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  z-index: 1;
+  display: block;
+  margin: auto;
+}
+.image-modal::after {
+  background-image: url('../images/modal.products/products-ingredients__x1.jpg');
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 132px;
+  height: 132px;
+  z-index: 3;
+  margin-top: -7px;
+}
+
 .ingredients-list {
   display: flex;
   justify-content: space-between;
@@ -307,6 +333,41 @@ button {
   font-size: 14px;
   line-height: 1.76;
   letter-spacing: 0.56px;
+}
+
+.ingredients-values {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.56px;
+  background-color: #9cbe8f;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.ingredients-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.ingredients-ellipse {
+  border-radius: 40px;
+  border: 2px solid #9cbe8f;
+  width: 65px;
+  height: 90px;
+}
+
+.ingredients-text {
+  color: var(--text);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: normal;
+  margin-bottom: 14px;
 }
 
 .arrow-button {
