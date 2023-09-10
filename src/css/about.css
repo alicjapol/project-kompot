@@ -1,7 +1,8 @@
-.container.container-about-advantages {
+.container-about-advantages {
   background-color: var(--brand-green);
   padding-top: 60px;
   text-align: center;
+  /* width: 100vw; */
 }
 
 .section-about {
