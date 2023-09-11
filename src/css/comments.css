@@ -1,66 +1,74 @@
 /* SEKCJA KOMENTARZE */
 
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.comments-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/backgrounds/background_x2.jpg);
+}
+.testimonial {
+  position: relative;
+  max-width: 968px;
+  width: 100%;
+  padding: 43px 109px;
+}
+.testimonial .image-swiper {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 32px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 43px 73px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light);
+  background-color: var(--brand-green);
+  border-radius: 24px;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
 
+/* swiper button css */
 
-   .comments-container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../images/backgrounds/background_x2.jpg);
-  }
-  .testimonial {
-    position: relative;
-    max-width: 968px;
-    width: 100%;
-    padding: 43px 109px;
-  }
-  .testimonial .image-swiper {
-    height: 170px;
-    width: 170px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  .testimonial .slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 32px;
-    height: 100%;
-    width: 100%;
-  }
-  .slide p {
-    text-align: center;
-    padding: 43px 73px;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--light);
-    background-color: var(--brand-green);
-    border-radius: 24px;
-  }
-  .slide .details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .details .name {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text);
-    ;
-  }
-
-  /* swiper button css */
-
-  .swiper-pagination {
-    background-color: var(--brand-green);
-  }
-  .swiper-pagination-bullet-active {
-    background-color: var(--brand-green);
-  }
+.swiper-pagination {
+  background-color: var(--brand-green);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--brand-green);
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}
+.swiper-pagination-bullet-active {
+  background-color: black;
+}

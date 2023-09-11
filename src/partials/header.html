@@ -1,23 +1,35 @@
 <!-- Header -->
-<header>
+<header class="header-margin">
   <div class="container header">
     <div class="logo">
-      <a class="icon-icecream" href="/#">
+      <a href="/#">
         <svg class="logo-icon">
           <use href="./images/icons.svg#icon-logo"></use>
         </svg>
       </a>
     </div>
+    <div>
+      <button
+        type="button"
+        class="mobile-open-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile-button" width="32px" height="32px">
+          <use href="./images/icons.svg#icon-mobile-open"></use>
+        </svg>
+      </button>
+    </div>
     <nav>
       <ul class="nav">
         <li>
-          <a class="nav-link" href="/#">Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
-        <li><a class="nav-link" href="#">How it's made?</a></li>
+        <li><a class="nav-link" href="#how_it's_made">How it's made?</a></li>
         <li>
-          <a class="nav-link" href="#">Our products</a>
+          <a class="nav-link" href="#products">Our products</a>
         </li>
-        <li><a class="nav-link" href="#">Contact</a></li>
+        <li><a class="nav-link" href="#contacts">Contact</a></li>
       </ul>
     </nav>
     <button class="button-buy">
