@@ -5,9 +5,11 @@
   width: 100vw;
   height: 100vh;
   padding-top: 100px;
-  /* transform: translateX(100%); */
-  /* @include full-transition(transform); */
   background-color: var(--brand-green);
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-logo {
@@ -42,6 +44,9 @@
   font-weight: 700;
   line-height: normal;
   color: var(--light);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -66,10 +71,16 @@
   line-height: normal;
   color: #000;
   margin-top: 110px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-buy-icon {
   fill: black;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-buy-btn:hover {
@@ -125,8 +136,11 @@
     right: 32px;
   }
 
-  .mobile-menu-item {
+  .mobile-menu-link {
     font-size: 48px;
+  }
+
+  .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
   }
 
