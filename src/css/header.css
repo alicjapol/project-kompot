@@ -42,26 +42,14 @@
   border-style: none;
   background-color: var(--brand-yellow);
 }
-.icon-icecream {
-  position: absolute;
-  display: inline;
-  top: 2px;
-  left: 21px;
-  width: 18.604px;
-  height: 37.143px;
-  fill: var(--brand-yellow);
-}
 
-.logo-text {
+.logo-icon {
   position: absolute;
-  text-align: center;
-  font-family: 'Seymour One', 'sans-serif';
-  font-size: 14.874px;
-  font-weight: 400;
-  top: 22.31px;
-  left: 35.17px;
-  letter-spacing: -1.487px;
-  color: var(--brand-yellow);
+  /* top: 9.86px;
+  left: 20px; */
+  width: 40px;
+  height: 37px;
+  fill: var(--brand-yellow);
 }
 .logo {
   width: 40px;
@@ -89,9 +77,9 @@
     width: 48px;
     height: 44px;
   }
-  .icon-icecream {
-    width: 22.325px;
-    height: 44.17px;
+  .logo-icon {
+    width: 48px;
+    height: 44px;
   }
   .logo-text {
     font-size: 17.687px;
@@ -107,12 +95,6 @@
   }
   .header {
     height: 48px;
-  }
-  .icon-icecream {
-    left: 34px;
-  }
-  .logo-text {
-    left: 50px;
   }
   .mobile-open-button {
     margin-left: 408px;
@@ -142,16 +124,9 @@
     height: 65px;
     margin-right: 309px;
   }
-  .icon-icecream {
-    width: 27.907px;
-    height: 55.069px;
-    top: 11.86px;
-    left: 19px;
-  }
-  .logo-text {
-    font-size: 21.76px;
-    top: 42.01px;
-    left: 40px;
+  .logo-icon {
+    width: 60px;
+    height: 65px;
   }
   .button-buy {
     margin-top: 20px;
