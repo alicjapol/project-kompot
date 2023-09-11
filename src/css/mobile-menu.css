@@ -1,0 +1,136 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  /* transform: translateX(100%); */
+  /* @include full-transition(transform); */
+  background-color: var(--brand-green);
+}
+
+.mobile-menu-logo {
+  fill: var(--brand-yellow);
+  position: absolute;
+  top: 12px;
+  left: 32px;
+}
+
+.mobile-menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  fill: var(--light);
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.mobile-menu-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--light);
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: var(--text);
+}
+
+/* Mobile Button */
+.mobile-buy-btn {
+  background-color: var(--brand-yellow);
+  width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  color: #000;
+  margin-top: 110px;
+}
+
+.mobile-buy-icon {
+  fill: black;
+}
+
+.mobile-buy-btn:hover {
+  background-color: #0a8817;
+}
+
+.mobile-buy-btn:focus {
+  background-color: #0a8817;
+  color: var(--light);
+}
+
+.mobile-buy-btn:focus .mobile-buy-icon {
+  fill: var(--light);
+}
+
+.mobile-buy-btn:disabled {
+  background-color: var(--disabled);
+}
+
+.mobile-btn-container {
+  text-align: center;
+}
+
+/* is shown */
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+/* Mobile only */
+@media screen and (min-width: 480px) {
+  .mobile-menu-logo {
+    width: 48px;
+    height: 44px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .mobile-menu-toggle {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .mobile-menu-logo {
+    top: 20px;
+    left: 32px;
+  }
+
+  .mobile-menu-toggle {
+    top: 32px;
+    right: 32px;
+  }
+
+  .mobile-menu-item {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .mobile-buy-btn {
+    display: none;
+  }
+}
