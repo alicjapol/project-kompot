@@ -6,6 +6,7 @@
 @import url(./gallery.css);
 @import url(./about.css);
 @import url(./advantages.css);
+@import url(./read-more-modal.css);
 
 * {
   padding: 0;

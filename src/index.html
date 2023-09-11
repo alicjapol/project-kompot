@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagłówek strony</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./images/favicon.png" type="image/png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@400;500;700;800;900&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!--  HEAD -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEV!!</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./images/favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@400;500;700;800;900&family=Seymour+One&display=swap"
+        rel="stylesheet" />
+</head>
 
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <include src="./partials/example.html" class="example"></include>
+<body>
+  <!--  HEAD -->
 
-    <include src="./partials/header.html"></include>
+  <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+  <include src="./partials/example.html" class="example"></include>
 
-    <include src="./partials/hero.html"></include>
+  <include src="./partials/header.html"></include>
 
-    <include src="./partials/products.html"></include>
+  <include src="./partials/hero.html"></include>
 
-    <include src="./partials/about.html"></include>
+  <include src="./partials/products.html"></include>
 
-    <include src="./partials/comments.html"></include>
-    <include src="./partials/contacts.html"></include>
+  <include src="./partials/about.html"></include>
 
-    <include src="./partials/modal-products.html"></include>
+  <include src="./partials/comments.html"></include>
+  <include src="./partials/contacts.html"></include>
 
-    <include src="./partials/footer.html"></include>
+  <include src="./partials/modal-products.html"></include>
 
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+  <include src="./partials/footer.html"></include>
+  <include src="./partials/read-more-modal.html"></include>
 
-    <script src="./js/modal-with-info-about-products.js"></script>
-    <script src="./modal-buy-now.js"></script>
-  </body>
+  <!-- Skrypt jest nare samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+
+  <script src="./js/modal-with-info-about-products.js"></script>
+  <script src="./js/modal-read-more.js"></script>
+  <!-- <script src="./modal-buy-now.js"></script> -->
+</body>
+
 </html>
