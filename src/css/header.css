@@ -39,10 +39,12 @@
   border-style: none;
   background-color: var(--brand-yellow);
 }
-.icon-icecream {
+.logo-icon {
   position: absolute;
-  top: 9.86px;
-  left: 20px;
+  /* top: 9.86px;
+  left: 20px; */
+  width: 60px;
+  height: 65px;
   fill: var(--brand-yellow);
 }
 
