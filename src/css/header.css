@@ -1,6 +1,9 @@
+.header-margin {
+  margin-top: 12px;
+}
 .header {
   position: relative;
-  height: 65px;
+  height: 37px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,35 +42,129 @@
   border-style: none;
   background-color: var(--brand-yellow);
 }
-.logo-icon {
+.icon-icecream {
   position: absolute;
-  /* top: 9.86px;
-  left: 20px; */
-  width: 60px;
-  height: 65px;
+  display: inline;
+  top: 2px;
+  left: 21px;
+  width: 18.604px;
+  height: 37.143px;
   fill: var(--brand-yellow);
 }
 
 .logo-text {
   position: absolute;
-  top: 32.15px;
-  left: 20.43px;
   text-align: center;
   font-family: 'Seymour One', 'sans-serif';
-  font-size: 21.76px;
+  font-size: 14.874px;
   font-weight: 400;
-  letter-spacing: -2.176px;
+  top: 22.31px;
+  left: 35.17px;
+  letter-spacing: -1.487px;
   color: var(--brand-yellow);
-  fill: transparent;
 }
 .logo {
-  width: 60px;
-  height: 65px;
-  margin-top: 8px;
-  padding-right: 308px;
+  width: 40px;
+  height: 37px;
 }
 .button-arrow {
   position: absolute;
   top: 15px;
   left: 109px;
+}
+.mobile-open-button {
+  background-color: transparent;
+  fill: var(--light);
+  border: none;
+}
+/* Mobile */
+@media (min-width: 480px) {
+  .header-margin {
+    margin-top: 14px;
+  }
+  .header {
+    height: 44px;
+  }
+  .logo {
+    width: 48px;
+    height: 44px;
+  }
+  .icon-icecream {
+    width: 22.325px;
+    height: 44.17px;
+  }
+  .logo-text {
+    font-size: 17.687px;
+    letter-spacing: -1.769px;
+    top: 26.31px;
+    left: 37.17px;
+  }
+}
+/* Tablet */
+@media (min-width: 768px) {
+  .header-margin {
+    margin-top: 20px;
+  }
+  .header {
+    height: 48px;
+  }
+  .icon-icecream {
+    left: 34px;
+  }
+  .logo-text {
+    left: 50px;
+  }
+  .mobile-open-button {
+    margin-left: 408px;
+  }
+  .button-buy {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .button-buy {
+    display: none;
+  }
+}
+/* Desktop */
+@media (min-width: 1199px) {
+  .mobile-open-button {
+    display: none;
+  }
+  .header-margin {
+    margin-top: 8px;
+  }
+  .header {
+    height: 65px;
+  }
+  .logo {
+    width: 60px;
+    height: 65px;
+    margin-right: 309px;
+  }
+  .icon-icecream {
+    width: 27.907px;
+    height: 55.069px;
+    top: 11.86px;
+    left: 19px;
+  }
+  .logo-text {
+    font-size: 21.76px;
+    top: 42.01px;
+    left: 40px;
+  }
+  .button-buy {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    margin-left: 207px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1199px) {
+  .nav {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
 }
