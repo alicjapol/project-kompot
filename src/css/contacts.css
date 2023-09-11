@@ -1,0 +1,119 @@
+.visually-hidden:not(:focus):not(:active){
+
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;}
+.contacts{
+display:flex;
+flex-direction: column;
+gap:16px;
+align-items: center;}
+
+p{font-family:montserrat;}
+
+
+.location-header{
+display: inline-block;
+border-radius: 4px;
+background-color: var(--brand-yellow);
+font-weight: 500;
+font-size: 12px;
+text-align: center;
+line-height: 1.2;
+padding: 4px 22px;
+}
+.wrapper-contacts{
+background-color: #fcfcfc;
+border-radius: 24px;
+padding: 40px 32px 24px;
+font-size: 12px;
+font-weight: 500;
+letter-spacing: 0.48px;
+line-height: 1.8;
+width: 216px;}
+.location{
+font-size: 12px;
+font-weight: 500;
+margin-top: 20px;
+margin-bottom: 8px;
+}
+.address-wrapper{
+display: block;
+color:var(--accent-brown);
+font-family: Montserrat;
+}
+
+.opening-hours{
+color:var(--subtle-text);
+
+}
+a{color: #131313;
+font-size: 12px;
+font-weight: 500;
+line-height: 1.6;
+font-style: normal;
+font-family: Montserrat;
+}
+.opening{
+margin-top: 24px;
+border-top: 1px solid #e1e1e1;   
+border-bottom: 1px solid #e1e1e1;
+padding-top:24px;
+padding-bottom:24px;
+}
+.days-wrapper{
+padding-bottom: 8px;  
+}
+.mail-wrapper{
+margin-top:24px;
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+.contacts{
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+.wrapper-contacts{font-size: 14px;
+width:163px;}
+.location{font-size:14px}
+.address-wrapper{font-size:14px}
+a{font-size: 14px;}
+.location-header{
+    font-size: 16px;
+    padding: 4px 10px;
+}
+.opening{padding-top: 32px;
+    padding-bottom: 32px;
+margin-top:32px;
+}
+}
+
+@media screen and (min-width:1200){
+.contacts{
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+.wrapper-contacts{font-size: 16px;
+width:288px;}
+.location{font-size:16px}
+.address-wrapper{font-size:16px}
+a{font-size: 16px;}
+.location-header{
+    font-size: 16px;
+}
+.opening{padding-top: 32px;
+    padding-bottom: 32px;
+margin-top:32px;
+}
+.days-wrapper{padding-bottom: 12px;}}
+
+.address-wrapper:hover,
+.address-wrapper:focus{
+text-decoration: underline;
+}
