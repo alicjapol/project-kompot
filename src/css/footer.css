@@ -6,4 +6,103 @@ ul{
     width: 40px;
     border-radius: 50%;
     background-color: var(--brand-yellow);
+}ul{
+    list-style-type: none;
 }
+
+.shape-icon-footer{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: var(--brand-yellow);
+}
+.footer-icon{
+    fill: var(--brand-green);
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+.copyright-wrapper{
+    font-family: "montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #7A7A7A;
+    margin: 0 auto;
+    line-height: 1.5;
+margin-top: 20px;
+margin-bottom: 20px;}
+@media screen and (max-width:480px){
+    .copyright-wrapper{
+        max-width: 165px;
+    }
+}
+.footer-wrapper{
+    border-bottom: 1px solid #e1e1e1;
+
+}
+.contact-footer{
+    text-align: right;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: normal;
+    font-family: "montserrat";
+    margin-top: 20px;
+    padding-bottom: 20px;}
+.footer-link{
+    font-family: "DM Sans";
+    font-weight: 500;
+    color:var(--light);
+}
+.footer-title{
+    margin-top: 60px;
+    color:var(--light);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "montserrat";
+    letter-spacing: normal;
+    text-transform: uppercase;
+    line-height:1.2;
+max-width: 260px;}
+
+.second-footer-title{
+    margin-top: 16px;
+    font-family: "montserrat";
+    font-size: 34px;
+    display: block;
+}
+
+.social-footer{
+    display: flex;
+    justify-content: flex-end;
+    gap:30px;
+    margin-top: 60px;
+}
+
+@media screen and (min-width:1200px){
+    .footer-title{max-width: 500px;
+    font-size: 30px;
+font-weight: 400;}
+.second-footer-title{
+    font-size: 58px;
+    font-weight: 700;
+}
+.contact-footer{
+    font-size: 16px;
+    margin-top: 40px;
+    padding-bottom: 60px;
+}
+.copyright-wrapper{
+    font-size: 12px;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.social-footer{
+    margin-top: 80px;
+}}
