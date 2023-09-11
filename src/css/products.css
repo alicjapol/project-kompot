@@ -1,10 +1,15 @@
 /* MOBILE */
 
 .wrapper {
+<<<<<<< Updated upstream
   background-image: url(../images/background_x1.jpg);
+=======
+  background-image: url(../images/backgrounds/background_x3.jpg);
+>>>>>>> Stashed changes
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  padding-bottom: 60px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -119,7 +124,7 @@
   transform: translateX(-50%);
 }
 .image-1::after {
-  background-image: url('../images/products/products-icecream_x1.jpg');
+  background-image: url('../images/products/products-icecream_x3.jpg');
   content: '';
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,7 +167,7 @@
 
 .image-2::after {
   content: '';
-  background-image: url('../images/products/products-coffe_x1.jpg');
+  background-image: url('../images/products/products-coffe_x3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -204,7 +209,7 @@
 
 .image-3::after {
   content: '';
-  background-image: url('../images/products/products-milkshake_x1.jpg');
+  background-image: url('../images/products/products-milkshake_x3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,6 +257,7 @@ button {
   visibility: visible;
   transition: opacity 250ms;
   z-index: 2;
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -323,7 +329,6 @@ button {
 .modal-comment {
   border: none;
   outline: none;
-  width: 100%;
   min-height: 84px;
   padding: 11px 11px;
   margin-bottom: 24px;
@@ -465,6 +470,9 @@ button {
 }
 
 .button-submit {
+  margin: auto;
+  width: 132px;
+  height: 42px;
   color: var(--text);
   border-radius: 10px;
   outline: none;
@@ -476,6 +484,15 @@ button {
   line-height: normal;
   display: inline-block;
   background-color: var(--brand-yellow);
+}
+
+.button-submit:hover {
+  background-color: #0A8817;
+}
+
+.button-submit:focus {
+   background-color: #0A8817;
+   color: var(--light);
 }
 
 .arrow-button {
