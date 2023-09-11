@@ -106,3 +106,7 @@ font-weight: 400;}
 .social-footer{
     margin-top: 80px;
 }}
+.footer-icon:hover,
+.footer-icon:focus{
+    fill:#FCFCFC;
+}
