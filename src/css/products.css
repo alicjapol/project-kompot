@@ -2,9 +2,13 @@
 
 .wrapper {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   background-image: url(../images/background_x1.jpg);
 =======
   background-image: url(../images/backgrounds/background_x3.jpg);
+>>>>>>> Stashed changes
+=======
+  background-image: url('../images/backgrounds/background_x3.jpg');
 >>>>>>> Stashed changes
   background-size: cover;
   background-repeat: no-repeat;
@@ -268,8 +272,8 @@ button {
 
 .modal-body {
   position: relative;
-  max-width: 568px;
-  min-height: 700px;
+  min-height: 968px;
+  overflow-y: auto;
   background-color: var(--light);
   border-radius: 10px;
   border: 2px solid var(--brand-yellow);
@@ -499,6 +503,9 @@ button {
   padding: 0;
   border: none;
   background: none;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* TABLET */
@@ -612,5 +619,9 @@ button {
     width: 302px;
     height: 302px;
     top: -16px;
+  }
+
+  .modal-body {
+    max-width: 568px;
   }
 }
