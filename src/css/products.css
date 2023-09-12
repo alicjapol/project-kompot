@@ -9,9 +9,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .box {
     background-image: url(../images/backgrounds/background_x2.jpg);
   }
@@ -138,9 +138,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .box {
     background-image: url('../images/products/products-icecream_x2.jpg');
   }
@@ -180,9 +180,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .box {
     background-image: url('../images/products/products-coffe_x2.jpg');
   }
@@ -222,9 +222,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .box {
     background-image: url('../images/products/products-milkshake_x2.jpg');
   }
@@ -236,6 +236,15 @@
   fill: var(--text);
   margin-bottom: 16px;
   margin-top: auto;
+  transform-origin: 0;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.icon-arrow:hover {
+  transform: scaleX(1.2);
 }
 
 /* Modal - SECTION */
@@ -266,7 +275,7 @@ button {
 
 .modal-body {
   position: relative;
-  min-height: 968px;
+  max-height: 968px;
   overflow-y: auto;
   background-color: var(--light);
   border-radius: 10px;
@@ -281,14 +290,22 @@ button {
 .modal-close {
   position: absolute;
   inset: 12px 12px auto auto;
-  width: 20px;
-  height: 20px;
-  fill: var(--text);
   border: none;
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-close-icon {
+  width: 11px;
+  height: 11px;
+  fill: var(--text);
+  background-color: #fff;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon:hover {
+  transform: rotate(360deg);
 }
 
 .modal-form {
@@ -315,20 +332,26 @@ button {
   transition-timing-function: var(--tr-function);
 }
 
+.field-text {
+  color: var(--text);
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 11px 16px;
+}
+
 .field-text::placeholder {
   color: var(--text);
   font-family: Montserrat;
   font-size: 14px;
   line-height: 1.4;
-  padding-left: 10px;
-  padding-top: 11px;
 }
 
 .modal-comment {
   border: none;
   outline: none;
   min-height: 84px;
-  padding: 11px 11px;
+  width: 368px;
   margin-bottom: 24px;
   border-radius: 10px;
   border: 1px solid var(--brand-green);
@@ -497,9 +520,6 @@ button {
   padding: 0;
   border: none;
   background: none;
-  transition-property: transform;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* TABLET */
@@ -538,6 +558,10 @@ button {
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
+  .wrapper {
+    background-image: url(../images/backgrounds/background_x3.jpg);
+  }
+
   .products-wrapper-main {
     flex-direction: row;
     column-gap: 29px;
