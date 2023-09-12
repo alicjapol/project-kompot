@@ -88,7 +88,6 @@ margin-top:24px;
     align-items: center;
     flex-direction: column;
     gap:16px;
-    margin-top: 24px;
     position: inherit;
     top:700px;
     
@@ -172,7 +171,7 @@ margin-top:32px;
 }
 }
 
-@media screen and (min-width:1200){
+@media screen and (min-width:1200px){
 .contacts{
     flex-direction: row;
     justify-content: center;
@@ -191,7 +190,10 @@ a{font-size: 16px;}
     padding-bottom: 32px;
 margin-top:32px;
 }
-.days-wrapper{padding-bottom: 12px;}}
+.days-wrapper{padding-bottom: 12px;}
+.contacts-section{top:300px;
+    padding-bottom: 400px;
+}}
 
 .address-wrapper:hover,
 .address-wrapper:focus{
