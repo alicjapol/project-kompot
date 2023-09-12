@@ -1,11 +1,42 @@
 <div class="backdrop is-hidden" modal-buy-now="">
-    <section class="modal">
-        <h1 class="modal__title">How it's made</h1>
-        
-        <button class="modal__closebutton close-button" type="button" modal-buy-now-close="">
-            <svg class="modal__closebutton--icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-    </section>
+  <section class="modal-buy-now">
+    <h2 class="modal-buy-title">Buy now</h2>
+
+    <button class="modal-buy-closebtn" type="button" modal-buy-now-close="">
+      <svg class="modal-buy-closebtn-icon" width="19" height="19">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form name="modal-form" class="modal-buy-form">
+      <div class="form-buy-wrapper">
+        <input id="user_name" type="text" name="name" placeholder="" class="form-buy-input" />
+        <label class="form-buy-label" for="user_name">Name</label>
+      </div>
+
+      <div class="form-buy-wrapper">
+        <input
+          id="phone_number"
+          type="text"
+          name="phone_number"
+          placeholder=""
+          class="form-buy-input"
+        />
+        <label for="phone_number" class="form-buy-label">Phone</label>
+      </div>
+
+      <div class="form-buy-wrapper">
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder=""
+          class="form-buy-input buy-now-comment"
+        ></textarea>
+        <label for="comment" class="form-buy-label">Comment</label>
+      </div>
+      <div class="buy-now-btn-wrapper">
+        <button type="submit" class="form-buy-btn">Submit</button>
+      </div>
+    </form>
+  </section>
 </div>
