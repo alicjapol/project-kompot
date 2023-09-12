@@ -7,11 +7,23 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;}
+
+   .contacts-section{
+    position:relative;
+    padding-top: 284px;
+    padding-bottom: 40px;
+   } 
 .contacts{
 display:flex;
 flex-direction: column;
 gap:16px;
-align-items: center;}
+align-items: center;
+position:absolute;
+padding-bottom:40px;
+top: -350px;
+left: 50%;
+transform: translate(-50%);
+}
 
 p{font-family:montserrat;}
 
@@ -71,12 +83,79 @@ padding-bottom: 8px;
 .mail-wrapper{
 margin-top:24px;
 }
+.btn-contacts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:16px;
+    margin-top: 24px;
+    position: inherit;
+    top:700px;
+    
+}
+.btn{   display: flex; 
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: montserrat;
+    font-weight: 600;
+    line-height: 1.2;
+    gap:4px;
+    align-items: center;
+min-width: 196px;
+border:2px solid var(--brand-yellow)}
+
+.locations-btn{
+    background-color: var(--brand-yellow);
+    padding: 12px 40px;
+}
+
+
+.franchise-btn{
+    padding: 12px 55px;
+    background-color: var(--green-accent) ;
+
+}
+
+.locations-btn:hover{background-color: var(--button-green);
+    border: 2px solid var(--button-green);}
+
+.locations-btn:focus{
+    background-color: var(--button-green);
+    border: 2px solid var(--button-green);
+color:#fcfcfc;
+fill: #fcfcfc;}
+
+.locations-btn:disabled{
+    background-color: var(--subtle-text);
+    border: 2px solid var(--subtle-text);
+}
+.franchise-btn:hover{
+    border: 2px solid var(--button-green);}
+
+.franchise-btn:focus{
+    border: 2px solid var(--button-green);
+color:#fcfcfc;
+fill: #fcfcfc;}
+
+.franchise-btn:disabled{
+    border: 2px solid var(--subtle-text);
+}
+
+
+@media screen and (min-width:768px){
+.btn-contacts{flex-direction: row;
+justify-content: center;
+top:-50px;
+}
+}
 
 @media screen and (min-width:768px) and (max-width:1199px){
 .contacts{
     flex-direction: row;
     justify-content: center;
     margin: auto;
+    top:-303px;
+    
 }
 .wrapper-contacts{font-size: 14px;
 width:163px;}
@@ -98,6 +177,7 @@ margin-top:32px;
     flex-direction: row;
     justify-content: center;
     margin: auto;
+    
 }
 .wrapper-contacts{font-size: 16px;
 width:288px;}

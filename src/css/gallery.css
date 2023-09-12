@@ -1,6 +1,10 @@
 .slide {
     margin: 0px auto;
+    padding: 0 20px;
     text-align: center;
+    position: relative;
+    top:-580px;
+    max-width: 440px;
   }
   
   .baner {
@@ -12,6 +16,9 @@
     left: 0;
     right: 0;
     z-index: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    
   }
   
   .baner li {
@@ -61,4 +68,14 @@
       opacity: 0;
     }
   }
-  
+
+  @media screen and (min-width:768px) {
+    .slide{
+      max-width: 704px;
+    }
+      }
+      @media screen and (min-width:1200px) {
+        .slide{
+          max-width: 1013px;
+        }
+      }
