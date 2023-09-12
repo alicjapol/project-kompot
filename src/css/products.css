@@ -8,9 +8,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .box {
     background-image: url('../images/backgrounds/background_x2.jpg');
   }
@@ -119,6 +119,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 .image-1::after {
   background-image: url('../images/products/products-icecream_x1.jpg');
   content: '';
@@ -136,9 +137,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .box {
     background-image: url('../images/products/products-icecream_x2.jpg');
   }
@@ -178,9 +179,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .box {
     background-image: url('../images/products/products-coffe_x2.jpg');
   }
@@ -220,9 +221,9 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .box {
     background-image: url('../images/products/products-milkshake_x2.jpg');
   }
@@ -242,7 +243,7 @@ button {
   cursor: pointer;
 }
 
-.modal {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -526,6 +527,7 @@ button {
     column-gap: 29px;
     margin-top: 120px;
   }
+
   .products-wrapper {
     width: 370px;
     height: 536px;
@@ -581,6 +583,7 @@ button {
     height: 302px;
     top: -167px;
   }
+
   .image-2::after {
     width: 302px;
     height: 302px;
@@ -592,6 +595,7 @@ button {
     height: 302px;
     top: -167px;
   }
+
   .image-3::after {
     width: 302px;
     height: 302px;
