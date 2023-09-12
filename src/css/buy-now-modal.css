@@ -19,10 +19,6 @@
   pointer-events: none;
 }
 
-/* .backdrop.is-hidden .modal-buy-now {
-  transform: translate(-50%, -50%) scale(1.1);
-} */
-
 /* Modal window */
 .modal-buy-now {
   max-width: 568px;
@@ -42,6 +38,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+  margin-bottom: 103px;
 }
 
 /* Close button */
@@ -65,6 +62,128 @@
 
 .modal-buy-closebtn-icon:hover {
   transform: rotate(360deg);
+}
+
+/* Pictures decoration*/
+.buy-pictures {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-pictures-list {
+  display: flex;
+  gap: 32px;
+}
+
+.buy-product-name {
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+.buy-decorative-circle {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  top: -50%;
+}
+
+.buy-decorative-circle::before {
+  content: '';
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  top: -7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buy-decorative-circle.first::before {
+  background-image: url(../images/products/products-icecream_x1.jpg);
+}
+
+.buy-decorative-circle.second::before {
+  background-image: url(../images/products/products-coffe_x1.jpg);
+}
+
+.buy-decorative-circle.third::before {
+  background-image: url(../images/products/products-milkshake_x1.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .buy-decorative-circle.first::before {
+    background-image: url('../images/products/icecream@2x.jpg');
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .buy-decorative-circle.second::before {
+    background-image: url('../images/products/coffee@2x.jpg');
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .buy-decorative-circle.third::before {
+    background-image: url('../images/products/milkshake@2x.jpg');
+  }
+}
+
+.buy-decorative-circle.first {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%),
+    #d9d9d9;
+  box-shadow: 0px 5.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
+}
+
+.buy-decorative-circle.second {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%),
+    #d9d9d9;
+  box-shadow: 0px 5.2602739334106445px 19.72602653503418px rgba(153, 114, 23, 0.25);
+}
+
+.buy-decorative-circle.third {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%),
+    #d9d9d9;
+  box-shadow: 0px 5.2602739334106445px 19.72602653503418px rgba(0, 0, 0, 0.25);
+}
+
+.buy-text-container {
+  position: relative;
+  width: 132px;
+  height: 135px;
+  border-radius: 15px;
+  box-shadow: 0px 5.26027px 19.72603px 0px rgba(212, 20, 67, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.buy-text-container.first {
+  border: 2px solid #96af8c;
+}
+
+.buy-text-container.second {
+  border: 2px solid #efd478;
+  background-color: #efd478;
+}
+
+.buy-text-container.third {
+  border: 2px solid #d6936d;
 }
 
 /* Modal Form*/
@@ -108,7 +227,6 @@
 
 .form-buy-input:focus ~ label,
 input:not(:placeholder-shown) ~ label {
-  /* .form-buy-input:not(:focus):valid ~ label { */
   top: -16px;
   left: 1px;
   font-size: 9px;
