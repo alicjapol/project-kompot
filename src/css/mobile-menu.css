@@ -1,9 +1,7 @@
 .menu-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
+  z-index: 10;
   padding-top: 100px;
   background-color: var(--brand-green);
   transform: translateX(100%);
