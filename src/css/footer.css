@@ -10,7 +10,11 @@ ul{
 }ul{
     list-style-type: none;
 }
+footer{
+    position:relative;
+    top:700px;
 
+}
 .shape-icon-footer{
     height: 34px;
     width: 34px;
@@ -60,7 +64,6 @@ margin-bottom: 20px;}
     color:var(--light);
 }
 .footer-title{
-    margin-top: 60px;
     color:var(--light);
     font-size: 18px;
     font-weight: 700;
@@ -83,7 +86,11 @@ max-width: 260px;}
     gap:30px;
     margin-top: 60px;
 }
-
+@media screen and (min-width:768px){
+    footer{
+        top:-50px;
+    }
+}
 @media screen and (min-width:1200px){
     .footer-title{max-width: 500px;
     font-size: 30px;
@@ -154,7 +161,6 @@ margin-bottom: 20px;}
     color:var(--light);
 }
 .footer-title{
-    margin-top: 60px;
     color:var(--light);
     font-size: 18px;
     font-weight: 700;
