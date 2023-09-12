@@ -1,14 +1,33 @@
-// (() => {
-//     const refs = {
-//       openModalBtn: document.querySelector("[data-modal-open]"),
-//       closeModalBtn: document.querySelector("[data-modal-close]"),
-//       modal: document.querySelector("[data-modal]"),
-//     };
+(() => {
+    const refs = {
+      openModalBtn: document.querySelector("[modal-buy-now-open]"),
+      closeModalBtn: document.querySelector("[modal-buy-now-close]"),
+      modal: document.querySelector("[modal-buy-now]"),
+    };
   
-//     refs.openModalBtn.addEventListener("click", toggleModal);
-//     refs.closeModalBtn.addEventListener("click", toggleModal);
+    if (!refs.openModalBtn) {
+      console.error("openModalBtn element not found!");
+    } else {
+      refs.openModalBtn.addEventListener("click", toggleModal);
+    }
   
-//     function toggleModal() {
-//       refs.modal.classList.toggle("is-hidden");
-//     }
-//   })();
+    if (!refs.closeModalBtn) {
+      console.error("closeModalBtn element not found!");
+    } else {
+      console.log("closeModalBtn",refs.closeModalBtn);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+    }
+  
+    if (!refs.modal) {
+      console.error("modal element not found!");
+    }
+  
+    function toggleModal() {
+      if (refs.modal) {
+        refs.modal.classList.toggle("is-hidden");
+      } else {
+        console.error("modal element not found, cannot toggle modal!");
+      }
+    }
+  })();
+  
