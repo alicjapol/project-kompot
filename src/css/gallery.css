@@ -1,166 +1,198 @@
 .slide {
-    margin: 0px auto;
-    padding: 0 20px;
-    text-align: center;
-    max-width: 100%;
-  }
-  
-  .baner {
-    width: 100%;
-    height: 204px;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    top:-30px;
-    
-  }
-  
-  .baner li {
-    list-style: none;
-  }
-
-  .baner li a {
-    display: block;
-  
-    position: absolute;
-    z-index: 1;
-    text-indent: -9999em;
-  }
-  
-  .baner li span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    color: transparent;
-    animation: imageAnimation 25s ease infinite 0s;
-  }
-  
-  .baner li:nth-child(2) span {
-    animation-delay: 8s;
-  }
-  
-  .baner li:nth-child(3) span {
-    animation-delay: 16s;
-  }
-  
-  @keyframes imageAnimation {
-    0% {
-      opacity: 0;
-    }
-    13% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 1;
-    }
-    37% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  @media screen and (min-width:768px) {
-    .slide{
-      max-width: 704px;
-    }
-      }
-      @media screen and (min-width:1200px) {
-        .slide{
-          max-width: 1013px;
-        }
-      }
-
-.gallery-customer-wrapper{
-  background-image: url(../images/backgrounds/background_x2.jpg);
-  padding-bottom: 200px;
+  margin: 0px auto;
+  padding: 0 20px;
+  text-align: center;
+  max-width: 100%;
 }
 
-@media screen and (min-width:768px){
-  .baner{
-    height:327px;
+.baner {
+  width: 100%;
+  height: 204px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  top:-30px;
+  
+}
+
+.baner li {
+  list-style: none;
+}
+
+.baner li a {
+  display: block;
+
+  position: absolute;
+  z-index: 1;
+  text-indent: -9999em;
+}
+
+.baner li span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: transparent;
+  animation: imageAnimation 25s ease infinite 0s;
+}
+
+.baner li:nth-child(2) span {
+  animation-delay: 8s;
+}
+
+.baner li:nth-child(3) span {
+  animation-delay: 16s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+  }
+  13% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  37% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
-@media screen and (min-width:1200px){
-  .baner{
-    height:422px;
-  }
-}
+
 
 /* SEKCJA KOMENTARZE */
 
 * {
-  font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', sans-serif;
 }
 
 .comments-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../images/backgrounds/background_x2.jpg);
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(../images/backgrounds/background_x2.jpg);
 }
 
 .image-swiper {
-  height: 85px;
-  width: 85px;
-  object-fit: cover;
-  border-radius: 50%;
+height: 85px;
+width: 85px;
+object-fit: cover;
+border-radius: 50%;
 }
 .swiper .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: 32px;
-  height: 100%;
-  width: 100%;
-  padding-top:80px ;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+row-gap: 32px;
+height: 100%;
+width: 100%;
+padding-top:80px ;
 }
 .swiper-slide p {
-  text-align: center;
-  padding: 43px 73px;
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--light);
-  background-color: var(--brand-green);
-  border-radius: 24px;
+text-align: center;
+padding: 35px 39px;
+font-size: 12px;
+font-weight: 400;
+color: var(--light);
+background-color: var(--brand-green);
+border-radius: 24px;
+font-family: Montserrat;
+line-height: 2.6em;
+text-align: center;
+
 }
 
 .name {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: center;
-  padding-bottom: 20px;
-  
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+padding-bottom: 20px;
+
 }
+
+
 
 /* swiper button css */
 
- .swiper-pagination {
-  padding-top: 32px;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
- }
- 
-.swiper {
-  max-width: 968px;
-  position: relative;
-  padding-bottom: 30px;
-}
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-}
-.swiper-pagination-bullet-active {
-  background-color:  var(--brand-green);
+.swiper-pagination {
+display: flex;
+justify-content: center;
+gap: 8px;
 }
 
+.swiper {
+max-width: 280px;
+position: relative;
+padding-bottom: 30px;
+}
+.swiper-slide {
+
+}
+
+.swiper-pagination-bullet {
+width: 12px;
+height: 12px;
+}
+.swiper-pagination-bullet-active {
+background-color:  var(--brand-green);
+}
+
+
+.gallery-customer-wrapper{
+background-image: url(../images/backgrounds/background_x2.jpg);
+padding-bottom: 410px;
+}
+
+
+@media screen and (min-width:768px){
+.slide{
+  max-width: 704px;
+}
+.baner{
+height:327px;
+}
+.swiper {
+max-width: 705px;
+}
+.swiper-slide p {
+padding: 28px 80px;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.9em;
+letter-spacing: 0.04em;
+}
+.details {
+padding-bottom: 32px;
+
+}
+}
+@media screen and (min-width:1200px){
+.slide{
+  max-width: 1013px;
+}
+.baner{
+height:422px;
+}
+.gallery-customer-wrapper {
+padding-bottom: 200px;
+}
+.swiper {
+max-width: 1013px;
+}
+
+.swiper-slide p {
+font-size: 16px;
+padding: 43px 74px 41px 73px;
+
+}
+}
