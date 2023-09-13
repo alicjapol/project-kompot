@@ -29,6 +29,12 @@
   width: 32px;
   height: 32px;
   border: none;
+  fill: #131313;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-toggle:hover {
+  transform: rotate(360deg);
 }
 
 .mobile-menu-list {
