@@ -25,28 +25,9 @@
 .nav-link:hover {
   color: var(--brand-yellow);
 }
-.button-buy {
-  position: relative;
-  width: 152px;
-  height: 42px;
-  font-family: 'Montserrat', 'sans-serif';
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 3px;
-  margin-left: 207px;
-  margin-right: 0px;
-  text-align: center;
-  justify-content: center;
-  border-radius: 10px;
-  border-style: none;
-  background-color: var(--brand-yellow);
-}
 
 .logo-icon {
   position: absolute;
-  /* top: 9.86px;
-  left: 20px; */
   width: 40px;
   height: 37px;
   fill: var(--brand-yellow);
@@ -55,15 +36,14 @@
   width: 40px;
   height: 37px;
 }
-.button-arrow {
-  position: absolute;
-  top: 15px;
-  left: 109px;
-}
+
 .mobile-open-button {
   background-color: transparent;
   fill: var(--light);
   border: none;
+}
+.button-buy {
+  display: none;
 }
 /* Mobile */
 @media (min-width: 480px) {
@@ -100,14 +80,44 @@
     margin-left: 408px;
   }
   .button-buy {
+    display: block;
+    position: relative;
+    width: 152px;
+    height: 42px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    margin-left: 207px;
+    margin-right: 0px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--brand-yellow);
+    outline: transparent;
+  }
+  .button-buy:hover {
+    background-color: var(--button-green);
+  }
+  .button-arrow {
+    position: absolute;
+    top: 15px;
+    left: 109px;
+  }
+  .button-buy:focus {
+    background-color: var(--button-green);
+    color: var(--light);
+  }
+  .button-buy:focus .button-arrow {
+    fill: var(--light);
+  }
+  .button-buy {
     margin: 0;
   }
 }
-@media (max-width: 768px) {
-  .button-buy {
-    display: none;
-  }
-}
+
 /* Desktop */
 @media (min-width: 1199px) {
   .mobile-open-button {

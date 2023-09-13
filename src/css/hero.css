@@ -81,10 +81,16 @@
   border: 2px solid var(--brand-yellow);
   text-decoration: none;
   cursor: pointer;
+  outline: transparent;
 }
 
 .hero-button-bordered:hover {
   border-color: var(--button-green);
+}
+
+.hero-button-bordered:focus {
+  color: var(--light);
+  border: 2px solid #0a8817;
 }
 
 .hero-button-underlined {
@@ -97,10 +103,14 @@
   line-height: normal;
   text-decoration-line: underline;
   cursor: pointer;
+  outline: transparent;
 }
 
 .hero-button-underlined:hover {
   color: var(--button-green);
+}
+.hero-button-underlined:focus {
+  color: var(--light);
 }
 
 .hero-statistics {
@@ -166,6 +176,11 @@
   .hero-arrow {
     fill: var(--light);
     width: 40px;
+    transform-origin: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-arrow:hover {
+    transform: scaleX(1.2);
   }
   .hero-buttons {
     margin-bottom: 12px;
