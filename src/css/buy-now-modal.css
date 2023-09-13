@@ -10,7 +10,6 @@
   top: 0;
   left: 0;
   overflow-y: scroll;
-  z-index: 1;
 }
 
 .backdrop.is-hidden {
@@ -117,27 +116,27 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .buy-decorative-circle.first::before {
     background-image: url('../images/products/icecream@2x.jpg');
   }
 }
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .buy-decorative-circle.second::before {
     background-image: url('../images/products/coffee@2x.jpg');
   }
 }
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .buy-decorative-circle.third::before {
     background-image: url('../images/products/milkshake@2x.jpg');
   }
@@ -225,8 +224,8 @@
   color: var(--text);
 }
 
-.form-buy-input:focus ~ label,
-input:not(:placeholder-shown) ~ label {
+.form-buy-input:focus~label,
+input:not(:placeholder-shown)~label {
   top: -16px;
   left: 1px;
   font-size: 9px;
