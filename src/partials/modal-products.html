@@ -1,7 +1,7 @@
 <div class="backdrop is-hidden" product-modal>
   <div class="modal-body">
     <button class="modal-close" product-modal-close>
-      <svg class="modal-close-icon-items">
+      <svg class="modal-close-icon">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
@@ -31,12 +31,26 @@
       </div>
       <div class="modal-field-wrapper">
         <label for="phone"></label>
-        <input class="field-text" id="phone" type="tel" name="phone" pattern="\d*" minlength="9" maxlength="12"
-               placeholder="Phone" required />
+        <input
+          class="field-text"
+          id="phone"
+          type="tel"
+          name="phone"
+          pattern="\d*"
+          minlength="9"
+          maxlength="12"
+          placeholder="Phone"
+          required
+        />
       </div>
       <div class="modal-field-wrapper">
         <label for="comment"></label>
-        <textarea class="modal-comment field-text" name="comment" id="comment" placeholder="Comment"></textarea>
+        <textarea
+          class="modal-comment field-text"
+          name="comment"
+          id="comment"
+          placeholder="Comment"
+        ></textarea>
       </div>
       <button class="button-submit">Submit</button>
     </form>
