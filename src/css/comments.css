@@ -3,8 +3,8 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
-* .comments-container {
-  padding-top: 80px;
+
+.comments-container {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -12,19 +12,14 @@
   justify-content: center;
   background-image: url(../images/backgrounds/background_x2.jpg);
 }
-.testimonial {
-  position: relative;
-  max-width: 968px;
-  width: 100%;
-  padding: 43px 109px;
-}
-.testimonial .image-swiper {
-  height: 170px;
-  width: 170px;
+
+.image-swiper {
+  height: 85px;
+  width: 85px;
   object-fit: cover;
   border-radius: 50%;
 }
-.testimonial .slide {
+.swiper .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +28,7 @@
   height: 100%;
   width: 100%;
 }
-.slide p {
+.swiper-slide p {
   text-align: center;
   padding: 43px 73px;
   font-size: 14px;
@@ -42,80 +37,34 @@
   background-color: var(--brand-green);
   border-radius: 24px;
 }
-.slide .details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .details .name {
-  font-size: 20px;
+  font-family: Montserrat;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.86;
-  margin-bottom: 12px;
+  line-height: 30px;
+  letter-spacing: 0em;
   text-align: center;
-  color: var(--text);
-}
-.customer-image {
-  margin: 0 auto 32px;
-  border-radius: 50%;
-}
-.customer-revive {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2.55;
-  color: var(--light);
-  background-color: var(--brand-green);
-  border-radius: 10px;
-  flex-grow: 1;
-  width: 202px;
-  height: 186px;
-  margin: 0 auto 32px;
-  padding: 34px 39px;
-  text-align: center;
-  justify-content: center;
+  
 }
 
-@media (min-width: 768px) {
-  .comments-container {
-    padding-top: 100px;
-  }
-  .customer-revive {
-    font-size: 14px;
-    letter-spacing: 0.54px;
-    line-height: 1.86;
-    width: 545px;
-    height: 81px;
-    border-radius: 24px;
-    padding: 28px 80px 29px;
-  }
-  .details .name {
-    font-size: 16px;
-    margin-bottom: 32px;
-  }
-}
-@media (min-width: 1200px) {
-  .comments-container {
-    padding-top: 140px;
-  }
-  .customer-revive {
-    font-size: 16px;
-    letter-spacing: 0.64px;
-    width: 750px;
-    height: 52px;
-  }
-}
-/*  */
 /* swiper button css */
 
-.swiper-pagination-bullet-active {
-  background-color: var(--brand-green);
+ .swiper-pagination {
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+ }
+ 
+.swiper {
+  max-width: 968px;
+  position: relative;
 }
-
 .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
 }
 .swiper-pagination-bullet-active {
-  background-color: black;
+  background-color:  var(--brand-green);
 }
